@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Website Mau Aja</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #1a1a1a;
+      color: white;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .center-text {
+      font-size: 2rem;
+      margin-top: 1rem;
+    }
+    img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    .footer-text {
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #aaa;
+      user-select: none;
+      z-index: 100;
+    }
+    /* Animasi emoji jatuh */
+    .falling-emoji {
+      position: fixed;
+      top: -50px;
+      font-size: 2rem;
+      animation: fall 4s linear infinite;
+      user-select: none;
+      pointer-events: none;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 200;
+    }
+    @keyframes fall {
+      0% {
+        top: -50px;
+        opacity: 1;
+      }
+      100% {
+        top: 100%;
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img src="92730.jpg" alt="Image" />
+  <div class="center-text">mau aja di suruh 😹</div>
+  <div class="falling-emoji">😹</div>
+  <div class="footer-text">Mas Rusdi</div>
+</body>
+</html>
